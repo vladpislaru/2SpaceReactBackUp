@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+.container-center{
+  display: block;
+  align-self: center;
+  margin: auto;
+  margin-top: 0;
+  background-color: rgba(255,255, 255, 0.8);
+  width: 60vw;
+  min-height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  margin-bottom: 1vh;
+}
+
+.col{
+  width:50%;
+  padding: 2vmax ;
+  display: flex;
+  align-items: center;
+}
+
+.presentation-container{
+  width: 100%;
+  margin-left:-20%;
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 4px 13px 30px 1px rgba(102, 0, 204, 0.2);
+}
+
+.presentation-image{
+  width: 100%;
+  height: inherit;
+  border-radius: 20px;
+  aspect-ratio: 3/2;
+
+}
+
+.presentation-overlay{
+  position: absolute; /* Sit on top of the page content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#0f0c29, #24243e, #302b63 );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#0f0c29, #24243e, #302b63 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.9;
+  z-index: 2; 
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  border-radius: 20px;
+  transition: .1s ease-in-out;
+  font-size: 2vmax;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.col-dots{
+  position: relative;
+  float: right !important;
+  width: 11px;
+  margin-left: -10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dot{
+  width: 11px;
+  height: 11px;
+  margin:7px auto;
+  background-color: grey;
+  border-radius: 10px;
+  transition: height .5s linear;
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+}
+
+#teporary-opac{
+  opacity: 1;
+}
+
+.presentation-overlay:hover{
+  opacity: 0;
+}
+
+.title-logo{
+  width: 20vmax;
+  display: block;
+  margin: 2vmin auto;
+  margin-top: -10%;
+  /* margin: 2vmax; */
+}
+
+.dot#active{
+  border-radius: 10px;
+  height: 30px;
+  background-color: #554D74;
+
+}
+
+.presentation-carousel-points{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content-header{
+  font-weight: 400;
+  width: fit-content;
+  color: grey;
+  font-size: 1.2vmax;
+  margin-left: 10px;
+}
+
+#form230-title{
+  width: fit-content;
+  font-size: 1.4vmax;
+  font-weight: 800;
+  color: black;
+}
+
+#form230-content{
+  font-size: 1.1vmax;
+  text-align: left;
+  color: #454443;
+  font-weight: 500;
+}
+
+#underline-purple{
+  font-weight: 800;
+  color: #554D74;
+}
+
+
+.btn-form23{
+  position: relative;
+  width: 10vmax;
+  height: 3vmax;
+  margin-top: 10px;
+  background: #42275a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:white;
+  font-weight: 500;
+  font-size: 1vmax;
+  border-radius: 15px;
+  border:0;
+  outline: none;
+  box-shadow:0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+.btn-form23:focus,  .btn-form23:hover,  .btn-form23:active {
+  outline: none;
+  box-shadow:none;
+
+}
+.btn-form23:active{
+  transform: scale(0.9);
+  outline: none;
+  box-shadow:none;
+}
+
+@media only screen and ((min-width: 770px) and (max-width: 1200px)){
+  .container-center{
+    width: 80vw;
+  }
+  *{
+    font-size: 2vmax !important ;
+  }
+
+  .btn-form23{
+    width: 20vmax;
+    height: 6vmax;
+    
+
+  }
+}
+
+
+@media only screen and ((max-width: 769px) or (max-height: 680px)){
+  .container-center{
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col{
+    width:100% !important;
+    padding: 2vw ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .presentation-container{
+    width:90%;
+    margin:auto;
+    margin-top: -10vmin;
+  }
+
+  .col-dots{
+    position: relative;
+    margin:10px auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dot{
+    width: 11px;
+    height: 11px;
+    margin:auto 4px;
+    background-color: grey;
+    border-radius: 7px;
+    -moz-transition: width .5s;
+    -ms-transition: width .5s;
+    -o-transition: width .5s;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+  }
+
+  .dot#active{
+    border-radius: 10px;
+    width: 24px;
+    height: 11px;
+    background-color: #554D74;
+  
+  }
+  .presentation-carousel-points{
+    align-items: center;
+    justify-content: center !important;
+    width: 80%;
+  }
+  #form230-content{
+    text-align: center !important;
+    
+  }
+  
+ 
+}
+
+@media only screen and ((max-width: 768px) or (max-height: 481px)){
+  *{
+    font-size: 2vmax !important ;
+  }
+  .container-center{
+    width: 90%;
+    height: fit-content;
+  }
+  .col-dots{
+    margin-top: 10px;
+  }
+
+  .btn-form23{
+    width:fit-content;
+    margin:0;
+    padding: 10px;
+    height: fit-content;
+  }
+
+  .title-logo{
+    margin-top: -50px;
+  }
+}

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Form230Page from './Pages/Form230Page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
