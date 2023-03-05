@@ -2,15 +2,13 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import "../static/css/navbar.css"
 import logoImg from "../static/images/logos/simb-neutru-alb2.png"
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo2Space from "./../static/images/logos/logo.png"
-
+import NavLink from "react-bootstrap/esm/NavLink";
+import { Link } from "react-router-dom";
 const Navbar2sp = (props) => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -37,11 +35,11 @@ const Navbar2sp = (props) => {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3 text-light">
-                            <Nav.Link href="#action1" className="mt-3">
+                            <Link to="/">
                                 <div className="btn btn4">
-                                    <h3>Home</h3>
+                                    <h3>Home </h3>
                                 </div>
-                            </Nav.Link>
+                            </Link>
                             <Nav.Link href="#action1" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>About</h3>
@@ -93,11 +91,11 @@ const Navbar2sp = (props) => {
                                     <h3>Contact</h3>
                                 </div>
                             </Nav.Link>
-                            <Nav.Link href="#action2" className="mt-3">
+                            <Link to="/form230">
                                 <div className="btn btn4">
-                                    <h3>Support Us</h3>
+                                    <h3>Support </h3>
                                 </div>
-                            </Nav.Link>
+                            </Link>
                             <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Votează conștient</h3>
