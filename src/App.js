@@ -13,7 +13,7 @@ const App = () =>  {
       <Navbar/>
       <header className="App-header">
         <img className="title-logo" src={logoImg}  alt=""/>
-        <Form230Page/> 
+        
       </header>
       <Footer/>
     </div>

@@ -16,21 +16,33 @@ const Form230Page = () => {
     const array = [0,1,2]
     const [index, setIndex] = useState(0);
     const [transition,setTransition] = useState(false);
-
+    
     useEffect(() =>{
         setTransition(true);
         const timeout = setTimeout(() => {
             setTransition(false);
         }, 600)
+
+        return () => clearTimeout(timeout);
     } ,[index])
     
+    useEffect(() => {
+        const interval = setInterval(() => {
+            console.log(index);
+            setIndex((index + 1) % 3);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, [index])
+    
+
     return (
         <>
             <div className="container-center">
                 <div className="col">
                     <div className="presentation-container">
                         <img src ={images[index]} alt="Eva launch" className="presentation-image"/>
-                        <div className="presentation-overlay " id ={transition ? "teporary-opac" : ""} >Muncim neincetat</div>
+                        <div className="presentation-overlay " id ={transition ? "teporary-opac" : ""} >Expending possibilities</div>
                     </div>
                 </div>
                 <div className="col-dots">
