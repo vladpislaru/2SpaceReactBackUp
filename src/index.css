@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*::-webkit-scrollbar{
+  display: none;
+}
+
+.text-purple{
+  color: #531f7a;
+}
+
+.text-purple-white{
+  color: #9f69c6;
+}

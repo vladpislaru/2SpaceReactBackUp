@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
+
 .container-center{
   display: block;
   align-self: center;
@@ -177,6 +178,13 @@
   box-shadow:none;
 }
 
+#from230-redirect,  #from230-redirect:focus,  #from230-redirect:hover,  #from230-redirect:active {
+  outline: none !important;
+  box-shadow:none !important;
+  text-decoration: none !important;
+  color: white;
+
+}
 @media only screen and ((min-width: 770px) and (max-width: 1200px)){
   .container-center{
     width: 80vw;

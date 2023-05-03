@@ -60,7 +60,7 @@ const Form230Page = () => {
                         <h3 id="form230-title">Orice suport conteaza</h3>
                         <p id="form230-content">Redirectioneaza <span id="underline-purple">3,5%</span> din impozitul pe venit!</p>
                         <p id="form230-content">Ne poti ajuta completand <span id="underline-purple">formularul 230</span> pana pe data de 23 martie.</p>
-                        <button className="btn-form23">Redirectioneaza</button>
+                        <button className="btn-form23"><a href="https://formular230.ro/asociatia-2space" id="from230-redirect">Redirectioneaza</a></button>
                     </div>
                 </div>
             </div>

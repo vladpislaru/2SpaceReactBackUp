@@ -1,10 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Form23Page from './Pages/Form23Page';
-import { Route } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Form23Page from "./Pages/Form23Page";
+import TeamPage from "./Pages/TeamPage";
+import Navbar from "./Components/Nav";
+import Footer from "./Components/Footer";
+import { Route } from "react-router-dom";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -14,16 +17,19 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
   {
     path: "form230",
     element: <Form23Page />,
   },
+  {
+    path: "team",
+    element: <TeamPage />,
+  },
 ]);
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

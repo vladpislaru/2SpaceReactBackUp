@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import "../static/css/navbar.css"
+import "../static/css/footer.css"
 import logoImg from "../static/images/logos/simb-neutru-alb2.png"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,6 +10,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo2Space from "./../static/images/logos/logo.png"
 import NavLink from "react-bootstrap/esm/NavLink";
 import { Link } from "react-router-dom";
+import {FaFacebook, FaEnvelope, FaInstagram, FaLinkedin} from "react-icons/fa"
+
+
 const Navbar2sp = (props) => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -50,27 +54,6 @@ const Navbar2sp = (props) => {
                                     <h3>QUBE2SPACE</h3>
                                 </div>
                             </Nav.Link>
-                            {/* <h3 className="" style={{ flex: 1}}>
-                                <NavDropdown className="dropdown-center"
-                                    title={<div className="btn btn4">
-                                                <h3>Project EVA</h3>
-                                            </div>}
-                                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                    
-                                >
-                                    <NavDropdown.Item href="#action3">
-                                        <div className="btn btn4">
-                                            <h3>Project EVA</h3>
-                                        </div>
-                                    </NavDropdown.Item>
-                                    <NavDropdown.Item href="#action4">
-                                        <div className="btn btn4">
-                                            <h3>Project EVA</h3>
-                                        </div>
-                                    </NavDropdown.Item>
-                                    
-                                </NavDropdown>
-                            </h3> */}
                             <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Project EVA</h3>
@@ -78,7 +61,7 @@ const Navbar2sp = (props) => {
                             </Nav.Link>
                             <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
-                                    <h3>Project EVA</h3>
+                                    <h3>Project Luna</h3>
                                 </div>
                             </Nav.Link>
                             <Nav.Link href="#action2" className="mt-3">
@@ -91,7 +74,7 @@ const Navbar2sp = (props) => {
                                     <h3>Contact</h3>
                                 </div>
                             </Nav.Link>
-                            <Link to="/form230">
+                            <Link to="/form230" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Support </h3>
                                 </div>
@@ -101,21 +84,31 @@ const Navbar2sp = (props) => {
                                     <h3>Votează conștient</h3>
                                 </div>
                             </Nav.Link>
-                            <Nav.Link href="#action2" className="mt-3">
+                            <Nav.Link href="/team" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Team members</h3>
                                 </div>
                             </Nav.Link>
 
-                            {/* <NavDropdown
-                                title="Dropdown"
-                                id={`offcanvasNavbarDropdown-expand-${expand}`}
-                            >
-                                <NavDropdown.Item href="#action3">Project EVA</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">Project LUNA</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                
-                            </NavDropdown> */}
+                           
+                            <hr/>
+                            <div className="nav-footer-contacts">
+                                <div className="links-row">
+                                    <a href="https://www.facebook.com/Students2Space/" >
+                                        <FaFacebook className="social-img-footer" color={"#999"} size={"20"}/>
+                                    </a>
+                                    <a href="https://instagram.com/students2space" >
+                                        <FaInstagram className="social-img-footer" color={"#999"} size={"20"}/>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/students2space" >
+                                        <FaLinkedin className="social-img-footer" color={"#999"} size={"20"}/>
+                                    </a>
+                                    <a href="mailto: contact@students.2space.ro" >
+                                        <FaEnvelope className="social-img-footer" color={"#999"} size={"20"}/>
+                                    </a>
+                                </div>
+                            </div>
+                            
                         </Nav>
                         {/* <Form className="d-flex">
                             <Form.Control
@@ -150,6 +143,7 @@ const NavPages = (props) => {
                         <li><a href="pages/team_members.html" onclick="openNav()">Team members</a></li>
 
                     </ul>
+                    
                 </div>
             </nav>
         </>
