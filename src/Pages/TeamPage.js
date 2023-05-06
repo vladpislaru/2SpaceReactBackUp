@@ -17,7 +17,7 @@ const TeamPage = (props) => {
   return (
     <div className="App scroll-snap" >
       <Navbar />
-      <header className="App-header align-items-center" id="section-scroll">
+      <header className="App-header Team-main-bg align-items-center" id="section-scroll">
         <div className="row w-75">
           <div className="col-4">
             {/* <div className="card p-0" style={{ width: "18rem" }}>

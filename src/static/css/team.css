@@ -3,6 +3,11 @@
     scroll-snap-type: y mandatory;
 }
 
+.Team-main-bg{
+    background: url("../images/backgrounds/animatedBackground.gif") center center;
+    background-size: cover;
+}
+
 #section-scroll{
     scroll-snap-align: center;
 }
