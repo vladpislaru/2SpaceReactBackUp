@@ -44,9 +44,9 @@ const Navbar2sp = (props) => {
                                     <h3>Home </h3>
                                 </div>
                             </Link>
-                            <Nav.Link href="#action1" className="mt-3">
+                            <Nav.Link href="/AboutUs" className="mt-3">
                                 <div className="btn btn4">
-                                    <h3>About</h3>
+                                    <h3>About Us</h3>
                                 </div>
                             </Nav.Link>
                             <Nav.Link href="#action2" className="mt-3">

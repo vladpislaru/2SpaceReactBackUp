@@ -6,6 +6,7 @@ import Footer from './Components/Footer';
 import logoImg from "./static/images/logos/logo.png"
 import { useState } from 'react';
 import Form230Page from './Pages/Form230Page';
+import AboutUs from './Pages/AboutUs';
 import imgCornerLeft from './static/images/components/output-onlinegiftools.gif'
 import evaLaunch from './static/images/components/eva_border.gif'
 const App = () =>  {
