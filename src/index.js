@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Form23Page from "./Pages/Form23Page";
 import TeamPage from "./Pages/TeamPage";
+import AboutUs from "./Pages/AboutUs";
 import Navbar from "./Components/Nav";
 import Footer from "./Components/Footer";
 import { Route } from "react-router-dom";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "team",
     element: <TeamPage />,
+  },
+  {
+    path: "AboutUs",
+    element: <AboutUs />
   },
 ]);
 
