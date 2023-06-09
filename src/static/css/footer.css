@@ -22,9 +22,10 @@ section {
 }
 
 .social-img-footer:hover, .social-img-footer:focus {
-    color:white !important;
+    color:#ff7149 !important;
     cursor: pointer;
-
+    outline: none;
+    border: 0;
 }
 
 
