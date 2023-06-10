@@ -135,54 +135,37 @@ const App = () =>  {
           </div> */}
         </section>
         
-        <section className='w-100 d-flex flex-column bg-transparent'>
+        <section className='w-100 d-flex flex-column justify-content-center align-items-center bg-transparent'>
           <div className='mt-5 d-flex justify-content-center align-items-center w-100 about-row'>
             <h1 className='h1-section-title'>Sponsors & Partners</h1>
           </div>
           
           <div className='mt-5 d-flex justify-content-around align-items-center w-50 about-row '>
-            <div className='d-flex justify-content-center align-items-center col-2 card-white'>
-              <img src={ACS_logo} className='sponsors'>
-              </img>
-            </div>
-            <div className='d-flex justify-content-center align-items-center col-2 card-white'>
-              <img src={CAMPUS_logo} className='sponsors'>
-              </img>
-            </div>
-            <div className='d-flex justify-content-center align-items-center col-2 card-white'>
-              <img src={VODAFONE_logo} className='sponsors'>
-              </img>
-            </div>
-            <div className='d-flex justify-content-center align-items-center  col-2 card-white'>
-              <img src={PRAGMATIC_logo} className='sponsors'>
-              </img>
-            </div>
-            <Sponsor></Sponsor>
+            <Sponsor name="ACS" image={ACS_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="CAMPUS" image={CAMPUS_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="VODAFONE" image={VODAFONE_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="PragmaticPlay" image={PRAGMATIC_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
 
             
           </div>
 
           <div className='mt-5 mb-5 d-flex justify-content-around align-items-center w-50 about-row '>
-            <div className='d-flex justify-content-center align-items-center col-2 card-white'>
-              <img src={AeroSpaceJobs_logo} className='sponsors'>
-              </img>
-            </div>
-            <div className='d-flex justify-content-center align-items-center col-2 card-white'>
-              <img src={ASFIA_logo} className='sponsors'>
-              </img>
-            </div>
-            <div className='d-flex justify-content-center align-items-center col-2 card-white'>
-              <img src={RADAR_logo} className='sponsors'>
-              </img>
-            </div>
-            <div className='d-flex justify-content-center align-items-center  col-2 card-white'>
-              <img src={FIA_logo} className='sponsors'>
-              </img>
-            </div>
-            <div className='d-flex justify-content-center align-items-center col-2 card-white'>
-              <img src={UPBDRIVE_logo} className='sponsors'>
-              </img>
-            </div>
+            <Sponsor name="AeroSpaceJobs" image={AeroSpaceJobs_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="ASFIA" image={ASFIA_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="RADAR" image={RADAR_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="FIA" image={FIA_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            <Sponsor name="UPBDRIVE" image={UPBDRIVE_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+            
             
           </div>
         </section>

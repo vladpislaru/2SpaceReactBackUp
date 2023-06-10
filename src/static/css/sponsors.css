@@ -1,14 +1,4 @@
-html {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
- }
+
 
 img{
     alig-self: center;
@@ -16,24 +6,6 @@ img{
     width: 100%;
 }
 
-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 100vh;
-    background-color: #F7F9FC;
-    font-family: system, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 20px;
-    color: #5d6494;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
- }
  
  .container {
     width: 220px;
@@ -173,7 +145,7 @@ body {
  }
  
  .box::after {
-    content: "Discover the attacker's tactics and purposes and find out the identity of the attacker";
+    content: attr(data-content);
     position: absolute;
     width: 170px;
     top: 111px;

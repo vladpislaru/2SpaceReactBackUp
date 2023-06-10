@@ -1,25 +1,25 @@
 import React from "react";
 import "../static/css/sponsors.css"
 
-const Sponsor = () => {
+const Sponsor = ({name, description, image}) => {
     return(
         <>
             <div className="super-box">
                 <div className="container">
-                    <div className="box">
+                    <div className="box" data-content={description}>
                     <div className="icon_bg"></div>
                     </div>
 
                     <div className="icon bg-transparent">
 
-                    <img src="https://international.upb.ro/assets/img/logo-upb-new.png"/>
+                    <img src={image}/>
                     </div>
 
                 </div>
 
                 <div className="text">
                     <p className="title">
-                    Security Hardening
+                    {name}
                     </p>
 
                 </div>
