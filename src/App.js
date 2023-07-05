@@ -28,10 +28,10 @@ import UPB_logo from './static/images/Sponsors/LOGO_UPB_205_3.3_ro.png'
 import satelit from './static/images/components/satelit.png'
 import project_eva from './static/images/components/prtoject_eva.png'
 import Sponsor from './Components/Sponsor.js'
-import qube2space from './static/images/Qube2space/qube2space.png'
-import ReactPDF from '@react-pdf/renderer';
-import LunaProject from './static/images/AboutUS/LunaProject.jpeg'
-
+import LogoFatii from './static/images/Sponsors/logoFatii.png'
+import LogoDorini from './static/images/Sponsors/LogoDorini.png'
+import LogoETTI from './static/images/Sponsors/LogoETTI.png'
+import LogoINCAS from './static/images/Sponsors/LogoINCAS.png'
 
 const App = () =>  {
   const [displayForm, setDisplayForm] = useState(true);
@@ -41,6 +41,7 @@ const App = () =>  {
       <header className="App-header">
         <div className='overlay-header-bg'></div>
         <img className="title-logo" src={logoImg}  alt=""/>
+        {/* <img className="title-logo" src={UPB_logo}  alt="" id="logo-upb"/> */}
         <img id="bg-corner-left" src={imgCornerLeft}/>
         <img id="bg-corner-rigth" src={imgCornerLeft}/>
         <div className='bg-white' id="bg-white"></div>
@@ -160,64 +161,95 @@ const App = () =>  {
         
         <section  className=' w-100 d-flex flex-column justify-content-center align-items-center bg-transparent mt-5' id="SponsorsSection">
           <div className='mt-5 d-flex justify-content-center align-items-center w-100 about-row'>
-            <h1 className='h1-section-title h1_low_res'>Sponsors & Partners</h1>
+            <h1 className='h1-section-title h1_low_res'>Partners</h1>
           </div>
           <p id="small_h1_underline" className='p-0'>
             - - - 
           </p>
-        
+          
+          <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
+            <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+
+          </div>
+
           <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
-              <Sponsor name="ACS" image={ACS_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
-
-              <Sponsor name="CAMPUS" image={CAMPUS_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+              <Sponsor name="ETTI" image={LogoETTI} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+              <Sponsor name="CAMPUS" image={CAMPUS_logo} description="Research Institute „CAMPUS” is UPB's advanced research and development center for multi - and inter - disciplinary technologies."></Sponsor>
             </div>
             
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
-              <Sponsor name="VODAFONE" image={VODAFONE_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
-
-              <Sponsor name="PragmaticPlay" image={PRAGMATIC_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
-
+              <Sponsor name="FIA" image={FIA_logo} description="The Faculty of Aerospace Engineering (FAE) Mission is defined in the UPB Charter and is that of advanced research and education."></Sponsor>
+              <Sponsor name="ACS" image={ACS_logo} description="The Faculty of Automatic Control and Computers prepares engineers specialized in the fields of Systems Engineering and Computers and Information Technology"></Sponsor>
             </div>
 
            
           </div>
 
-          {/* <div className='mt-5 d-flex justify-content-around align-items-center w-50 about-row '>
-            <Sponsor name="PragmaticPlay" image={PRAGMATIC_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+        </section>
 
+        <section  className=' w-100 d-flex flex-column justify-content-center align-items-center bg-transparent mt-5' id="SponsorsSection">
+          <div className='mt-5 d-flex justify-content-center align-items-center w-100 about-row'>
+            <h1 className='h1-section-title h1_low_res'>Sponsors</h1>
+          </div>
+          <p id="small_h1_underline" className='p-0'>
+            - - - 
+          </p>
+          
+          <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
             <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
 
-          </div> */}
+          </div>
+
 
           <div className='  d-flex justify-content-around align-items-center flex-row  about-row ' id="sponsor-row-1">
 
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
-              <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+              <Sponsor name="PragmaticPlay" image={PRAGMATIC_logo} description="Pragmatic Play is a leading game developer providing player-favourites to the most successful global brands in the iGaming industry."></Sponsor>
+
+              <Sponsor name="VODAFONE" image={VODAFONE_logo} description="Vodafone Romania started business in 1997 and continues to deliver the best communication services."></Sponsor>
+            </div>
+
+            <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
+              <Sponsor name="FATII" image={LogoFatii} description="The FATII-ARTRI training center makes available to its students the exam simulation program for obtaining professional certificates and attestations."></Sponsor>
+              
+              <Sponsor name="DORINI" image={LogoDorini} description="The services of the Dorini company include road transport, partnerships with travel agencies and the provision of transport for employees to and from the workplace."></Sponsor>
+            </div>
             
+          </div>
+
+        </section>
+
+        <section  className=' w-100 d-flex flex-column justify-content-center align-items-center bg-transparent mt-5' id="SponsorsSection">
+          <div className='mt-5 d-flex justify-content-center align-items-center w-100 about-row'>
+            <h1 className='h1-section-title h1_low_res'>Contributors</h1>
+          </div>
+          <p id="small_h1_underline" className='p-0'>
+            - - - 
+          </p>
+          
+          <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
+            <Sponsor name="INCAS" image={LogoINCAS} description="National Institute for Aerospace Research “Elie Carafoli” is the leading research establishment in aerospace sciences in Romania"></Sponsor>
+
+          </div>
+
+          <div className='  d-flex justify-content-around align-items-center flex-row  about-row ' id="sponsor-row-1">
+
+            <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
+              <Sponsor name="UPBDRIVE" image={UPBDRIVE_logo} description="We are UPB Drive, the Formula Student team of the Polytechnic University of Bucharest Since 2018."></Sponsor>
+              
               <Sponsor name="AeroSpaceJobs" image={AeroSpaceJobs_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
             </div>
 
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
               <Sponsor name="ASFIA" image={ASFIA_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
               
-              <Sponsor name="RADAR" image={RADAR_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+              <Sponsor name="ROSPIN" image={ROSPIN_logo} description="The mission of ROSPIN is to develop the Romanian Space Ecosystem through various activities such as educational programmes."></Sponsor>
             </div>
             
           </div>
 
-          <div className=' d-flex justify-content-around align-items-center w-50 about-row '>
-            
-
-            {/* <Sponsor name="RADAR" image={RADAR_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor> */}
-            <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
-              <Sponsor name="FIA" image={FIA_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
-
-              <Sponsor name="UPBDRIVE" image={UPBDRIVE_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
-            </div>
-           
-          </div>
-        </section>
+          </section>
         
         <section className='w-100 d-flex flex-column mt-5 rounded bg-transparent align-items-center'>
           <div className='bg-transparent w-100 d-flex flex-column align-items-center'>

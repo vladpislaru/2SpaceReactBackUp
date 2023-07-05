@@ -34,7 +34,7 @@ const Qube2Space = (props) => {
 
                         <div className="btn btn4">
                             <h3>
-                                    Rulebook
+                                    Guideline
                             </h3>
                         </div>
                     </a>

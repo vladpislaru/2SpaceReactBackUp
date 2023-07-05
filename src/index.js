@@ -17,10 +17,7 @@ import {
 } from "react-router-dom";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
+
   {
     path: "form230",
     element: <Form23Page />,
@@ -36,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "qube2space",
     element: <Qube2Space />
+  },
+  {
+    path: "/",
+    element: <App />,
   },
 ]);
 

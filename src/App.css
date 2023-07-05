@@ -74,6 +74,14 @@
 .title-logo{
   z-index: 10;
 }
+
+.title-logo#logo-upb{
+  position: absolute;
+  top:70%;
+  width: 150px !important;
+  opacity: 0.8;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

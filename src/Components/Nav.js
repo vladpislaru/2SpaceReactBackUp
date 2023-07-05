@@ -49,11 +49,11 @@ const Navbar2sp = (props) => {
                                     <h3>About Us</h3>
                                 </div>
                             </Nav.Link> */}
-                            <Nav.Link href="/qube2space" className="mt-3">
+                            <Link to="/qube2space" className="mt-3">
                                 <div className="btn btn4">
-                                    <h3>QUBE2SPACE</h3>
+                                    <h3>QUBE2SPACE </h3>
                                 </div>
-                            </Nav.Link>
+                            </Link>
                             {/* <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Project EVA</h3>
@@ -84,11 +84,12 @@ const Navbar2sp = (props) => {
                                     <h3>Votează conștient</h3>
                                 </div>
                             </Nav.Link> */}
-                            <Nav.Link href="/team" className="mt-3">
+
+                            <Link to="/team" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Team members</h3>
                                 </div>
-                            </Nav.Link>
+                            </Link>
 
                            
                             <hr/>
