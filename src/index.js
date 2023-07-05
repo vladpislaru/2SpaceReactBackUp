@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Form23Page from "./Pages/Form23Page";
 import TeamPage from "./Pages/TeamPage";
 import AboutUs from "./Pages/AboutUs";
+import Qube2Space from "./Pages/Qube2Space";
 import Navbar from "./Components/Nav";
 import Footer from "./Components/Footer";
 import { Route } from "react-router-dom";
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "AboutUs",
     element: <AboutUs />
+  },
+  {
+    path: "qube2space",
+    element: <Qube2Space />
   },
 ]);
 

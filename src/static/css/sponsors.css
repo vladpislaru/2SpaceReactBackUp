@@ -1,5 +1,5 @@
 
-
+ 
 img{
     alig-self: center;
     aspect-ration: 1/1;
@@ -8,8 +8,8 @@ img{
 
  
  .container {
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -23,8 +23,8 @@ img{
  
  .box {
     position: absolute;
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,8 +63,8 @@ img{
  }
  
  .icon_bg {
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
     border-radius: 100%;
     border: 1px solid rgba(225, 227, 232, 0.18);
     -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
@@ -109,11 +109,12 @@ img{
  }
  
  .super-box {
-     width: 220px;
-    height: 220px;
+     width: 300px;
+    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -147,8 +148,8 @@ img{
  .box::after {
     content: attr(data-content);
     position: absolute;
-    width: 170px;
-    top: 111px;
+    width: 200px;
+    top: 180px;
     opacity: 0;
     font-size: 13px;
     color: #5d6494;

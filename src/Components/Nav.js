@@ -21,7 +21,7 @@ const Navbar2sp = (props) => {
         <>
             <Navbar key={expand} id="bg-black" expand={expand} className="navbar">
                 <Container fluid className="navbar">
-                    <a href="#" ><img className="logo" src={logoImg}  alt=""></img></a>
+                    <Link to="/"><a href="#" ><img className="logo" src={logoImg}  alt=""></img></a></Link>
 
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}  className="mx-2 hambuger-ligth" />
 
@@ -44,17 +44,17 @@ const Navbar2sp = (props) => {
                                     <h3>Home </h3>
                                 </div>
                             </Link>
-                            <Nav.Link href="/AboutUs" className="mt-3">
+                            {/* <Nav.Link href="/AboutUs" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>About Us</h3>
                                 </div>
-                            </Nav.Link>
-                            <Nav.Link href="#action2" className="mt-3">
+                            </Nav.Link> */}
+                            <Nav.Link href="/qube2space" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>QUBE2SPACE</h3>
                                 </div>
                             </Nav.Link>
-                            <Nav.Link href="#action2" className="mt-3">
+                            {/* <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Project EVA</h3>
                                 </div>
@@ -63,27 +63,27 @@ const Navbar2sp = (props) => {
                                 <div className="btn btn4">
                                     <h3>Project Luna</h3>
                                 </div>
-                            </Nav.Link>
-                            <Nav.Link href="#action2" className="mt-3">
+                            </Nav.Link> */}
+                            {/* <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Sponsors</h3>
                                 </div>
-                            </Nav.Link>
-                            <Nav.Link href="#action2" className="mt-3">
+                            </Nav.Link> */}
+                            {/* <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Contact</h3>
                                 </div>
-                            </Nav.Link>
+                            </Nav.Link> */}
                             <Link to="/form230" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Support </h3>
                                 </div>
                             </Link>
-                            <Nav.Link href="#action2" className="mt-3">
+                            {/* <Nav.Link href="#action2" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Votează conștient</h3>
                                 </div>
-                            </Nav.Link>
+                            </Nav.Link> */}
                             <Nav.Link href="/team" className="mt-3">
                                 <div className="btn btn4">
                                     <h3>Team members</h3>
