@@ -6,7 +6,8 @@ import "../static/css/qube2space.css"
 import Main from "../static/images/backgrounds/vodafone.JPG";
 import logoImg from "../static/images/logos/logo.png"
 import Modal from 'react-bootstrap/Modal';
-import pdf from '../static/docs/rulebook.pdf';
+import pdfRO from '../static/docs/rulebook_ro.pdf';
+import pdfEN from '../static/docs/rulebook_en.pdf';
 import { FaWindowClose } from "react-icons/fa";
 
 
@@ -30,11 +31,11 @@ const Qube2Space = (props) => {
             <div className=" mt-5 d-flex flex-row " id="buttons-row">
 
                 <div className="bt-rules  d-flex justify-content-around align-items-center ">
-                    <a href={pdf} target="_blank" rel="noreferrer" id="qube2sapce">
+                    <a href={pdfEN} target="_blank" rel="noreferrer" id="qube2sapce">
 
                         <div className="btn btn4">
                             <h3>
-                                    Guideline
+                                Guideline - EN
                             </h3>
                         </div>
                     </a>
@@ -43,10 +44,10 @@ const Qube2Space = (props) => {
                 
 
                 <div className="bt-rules d-flex justify-content-around align-items-center ">
-                    <a href={"https://tally.so/r/nGKXqz"} target="_blank" rel="noreferrer" id="qube2sapce">
+                    <a href={pdfRO} target="_blank" rel="noreferrer" id="qube2sapce">
                         <div className="btn btn4 ">
                             <h3>
-                                    Register
+                                Guideline - RO
                             </h3>
                         </div>
                     </a>
@@ -54,6 +55,15 @@ const Qube2Space = (props) => {
                 </div>
                 
 
+            </div>
+            <div className="mt-3 bt-rules d-flex justify-content-around align-items-center ">
+                <a href={"https://tally.so/r/nGKXqz"} target="_blank" rel="noreferrer" id="qube2sapce">
+                    <div className="btn btn4 ">
+                        <h3>
+                                Register
+                        </h3>
+                    </div>
+                </a>
             </div>
               
         </header>

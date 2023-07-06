@@ -1,26 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Nav';
 import Footer from './Components/Footer';
 import logoImg from "./static/images/logos/logo.png"
 import { useState } from 'react';
-import Form230Page from './Pages/Form230Page';
-import AboutUs from './Pages/AboutUs';
 import imgCornerLeft from './static/images/components/output-onlinegiftools.gif'
 import evaLaunch from './static/images/components/lansare_smardan.png'
-import eveniment from './static/images/form23/img0.jpeg'
 import ACS_logo from './static/images/Sponsors/acs_logo.png'
 import AeroSpaceJobs_logo from './static/images/Sponsors/AerospaceJobs.png'
-import ANSYS_logo from './static/images/Sponsors/ansys-logo-black.png'
 import CAMPUS_logo from './static/images/Sponsors/campus_logo_hires.png'
 import ASFIA_logo from './static/images/Sponsors/ASFIA.png'
-import ACRIDA_logo from './static/images/Sponsors/Ecrida.jpg'
 import FIA_logo from './static/images/Sponsors/FIA_logo_hires.png'
-import HYVE_logo from './static/images/Sponsors/hyve_logo_hires.png'
-import ForgottenChain_logo from './static/images/Sponsors/logo_forgottenchain.png'
-import RADAR_logo from './static/images/Sponsors/radar_logo_hires_inline.png'
-import ROSPIN_logo from './static/images/Sponsors/ROSPIN.png'
 import UPBDRIVE_logo from './static/images/Sponsors/UPBDrive.png'
 import VODAFONE_logo from './static/images/Sponsors/vodafone_logo_hires.png'
 import PRAGMATIC_logo from './static/images/Sponsors/logo-pragmatic-play.png'
@@ -32,6 +22,7 @@ import LogoFatii from './static/images/Sponsors/logoFatii.png'
 import LogoDorini from './static/images/Sponsors/LogoDorini.png'
 import LogoETTI from './static/images/Sponsors/LogoETTI.png'
 import LogoINCAS from './static/images/Sponsors/LogoINCAS.png'
+import ROSPIN_logo from './static/images/Sponsors/ROSPIN.png'
 
 const App = () =>  {
   const [displayForm, setDisplayForm] = useState(true);
@@ -122,41 +113,6 @@ const App = () =>  {
               
             </div>
           </div>
-          {/* <div className='mt-5 d-flex justify-content-center align-items-center w-100 about-row'>
-            <HomeAboutPhoto/>
-            <div className='d-flex justify-content-center align-items-center col-6 '>
-              <p className='w-75 text-white about-p '> STUDENTS2SPACE is an NGO that wants to provide 
-                  practical contexts for students passionate about 
-                  the space industry, especially rockets. 
-
-                  Specifically, this initiative supports volunteers in
-                  building and launching various rocket models. 
-
-                  STUDENTS2SPACE main activity takes place 
-                  inside the Research Center CAMPUS within 
-                  University POLITEHNICA of Bucharest, 
-                  Romania.
-              </p>
-            </div>
-          </div>
-          <div className='d-flex justify-content-center align-items-center w-100'>
-            <div className='d-flex justify-content-center align-items-center col-6 '>
-              <p className='w-75 text-white about-p '> STUDENTS2SPACE is an NGO that wants to provide 
-                  practical contexts for students passionate about 
-                  the space industry, especially rockets. 
-
-                  Specifically, this initiative supports volunteers in
-                  building and launching various rocket models. 
-
-                  STUDENTS2SPACE main activity takes place 
-                  inside the Research Center CAMPUS within 
-                  University POLITEHNICA of Bucharest, 
-                  Romania.
-              </p>
-            </div>
-            <HomeAboutPhoto image={eveniment}/>
-            
-          </div> */}
         </section>
         
         <section  className=' w-100 d-flex flex-column justify-content-center align-items-center bg-transparent mt-5' id="SponsorsSection">
@@ -168,19 +124,19 @@ const App = () =>  {
           </p>
           
           <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
-            <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+            <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania."></Sponsor>
 
           </div>
 
           <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
-              <Sponsor name="ETTI" image={LogoETTI} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+              <Sponsor name="ETTI" image={LogoETTI} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania."></Sponsor>
               <Sponsor name="CAMPUS" image={CAMPUS_logo} description="Research Institute „CAMPUS” is UPB's advanced research and development center for multi - and inter - disciplinary technologies."></Sponsor>
             </div>
             
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
               <Sponsor name="FIA" image={FIA_logo} description="The Faculty of Aerospace Engineering (FAE) Mission is defined in the UPB Charter and is that of advanced research and education."></Sponsor>
-              <Sponsor name="ACS" image={ACS_logo} description="The Faculty of Automatic Control and Computers prepares engineers specialized in the fields of Systems Engineering and Computers and Information Technology"></Sponsor>
+              <Sponsor name="ACS" image={ACS_logo} description="The Faculty of Automatic Control and Computers prepares engineers specialized in the fields of Systems Engineering and Computers and Information Technology."></Sponsor>
             </div>
 
            
@@ -197,7 +153,7 @@ const App = () =>  {
           </p>
           
           <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
-            <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+            <Sponsor name="UPB" image={UPB_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania."></Sponsor>
 
           </div>
 
@@ -229,7 +185,7 @@ const App = () =>  {
           </p>
           
           <div className=' d-flex justify-content-around align-items-center flex-row about-row ' id="sponsor-row-1">
-            <Sponsor name="INCAS" image={LogoINCAS} description="National Institute for Aerospace Research “Elie Carafoli” is the leading research establishment in aerospace sciences in Romania"></Sponsor>
+            <Sponsor name="INCAS" image={LogoINCAS} description="National Institute for Aerospace Research “Elie Carafoli” is the leading research establishment in aerospace sciences in Romania."></Sponsor>
 
           </div>
 
@@ -238,11 +194,11 @@ const App = () =>  {
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
               <Sponsor name="UPBDRIVE" image={UPBDRIVE_logo} description="We are UPB Drive, the Formula Student team of the Polytechnic University of Bucharest Since 2018."></Sponsor>
               
-              <Sponsor name="AeroSpaceJobs" image={AeroSpaceJobs_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+              <Sponsor name="AeroSpaceJobs" image={AeroSpaceJobs_logo} description=" AeroSpace Jobs is an organization that consists of a place dedicated to the aerospace field in Romania with the aim of creating jobs."></Sponsor>
             </div>
 
             <div className=' d-flex justify-content-around align-items-center ' id="sponsor-row-2">
-              <Sponsor name="ASFIA" image={ASFIA_logo} description="The University POLITEHNICA of Bucharest is the oldest and most prestigious engineering school in Romania"></Sponsor>
+              <Sponsor name="ASFIA" image={ASFIA_logo} description="It is a student organization within the The Faculty of Aerospace Engineering."></Sponsor>
               
               <Sponsor name="ROSPIN" image={ROSPIN_logo} description="The mission of ROSPIN is to develop the Romanian Space Ecosystem through various activities such as educational programmes."></Sponsor>
             </div>

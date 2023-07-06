@@ -1,6 +1,9 @@
 import React from "react";
 import "../static/css/footer.css"
 import {FaFacebook, FaEnvelope, FaInstagram, FaLinkedin, FaRocket} from "react-icons/fa"
+import { Link } from "react-router-dom";
+
+
 const logo = require('../static/images/logos/logo.png');
 const logo_Facebook = require('../static/images/logos/facebook.png');
 const logo_Instagram = require('../static/images/logos/instagram.png');
@@ -28,23 +31,23 @@ return (
                     <div className="row">
                         <div className="col-4">
                             <ul className="list-unstyled">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Team</a></li>
+                                <li><Link to="/" className="mt-3">Home</Link></li>
+                                <li><a href="" data-toggle="tooltip" data-placement="top" title="Soon!">About</a></li>
+                                <li><Link to="/team" className="mt-3">Team</Link></li>
                             </ul>
                         </div>
                         <div className="col-4">
                             <ul className="list-unstyled">
-                                <li><a href="">Qube 2Space</a></li>
-                                <li><a href="">Project Eva</a></li>
-                                <li><a href="">Project Luna</a></li>
+                                <li> <Link to="/qube2space" className="mt-3">Qube2Space</Link></li>
+                                <li><a href="" data-toggle="tooltip" data-placement="top" title="Soon!">Project Eva</a></li>
+                                <li><a href="" data-toggle="tooltip" data-placement="top" title="Soon!">Project Luna</a></li>
                             </ul>
                         </div>
                         <div className="col-4">
                             <ul className="list-unstyled">
-                                <li><a href="">Support Us</a></li>
-                                <li><a href="">Sponsors</a></li>
-                                <li><a href="">Vote Responsibly</a></li>
+                                <li><Link to="/form230" className="mt-3">Support Us</Link></li>
+                                <li><a href="" data-toggle="tooltip" data-placement="top" title="Soon!">Sponsors</a></li>
+                                <li><a href="" data-toggle="tooltip" data-placement="top" title="Soon!">Vote Responsibly</a></li>
                             </ul>
                         </div>
                     </div>

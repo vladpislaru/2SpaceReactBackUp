@@ -112,7 +112,7 @@ const TeamPage = (props) => {
           <div className="col-6">
             <div className="row">
 
-                <MemberCard image={ParvuSebastian} role={"Propultion"} name={"Parvu Sebastian"}/>
+                <MemberCard image={ParvuSebastian} role={"Propulsion"} name={"Parvu Sebastian"}/>
                 <MemberCard image={TeamMember.AndreiIoan} role={"Recovery"} name={"Andrei Ioan"}/>
 
             </div>
@@ -183,11 +183,10 @@ const TeamPage = (props) => {
         </div>
       </section>
       <section className="departments m-0  col-12 p-4 d-flex justify-content-center" >
-        <div className="row d-flex justify-content-center mt-4 w-75">
+        <div className="row d-flex justify-content-center align-items-center mt-4 w-75">
           
             <div className="col-6">
-              <div className="row">
-                <MemberCard image={TeamMember.CialacuAlexandru} role={"Member"} name={"Cialacu Alexandru"}/>
+              <div className="row d-flex justify-content-center align-items-center">
                 <MemberCard image={TeamMember.CialacuAlexandru} role={"Member"} name={"Cialacu Alexandru"}/>
               </div>
             </div>
